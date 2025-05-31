@@ -3,43 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>Arbitraz - Community Directed Arbitrage Experiment</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">My Site</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="logo">
+                <img src="arbitraz.png" alt="Arbitraz Logo" class="logo-img">
+                <span>Arbitraz</span>
+            </div>
+            <div class="social-links">
+                <a href="https://twitter.com/arbitraz_crypto" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://discord.gg/hJM2bbSDYr" target="_blank" rel="noopener noreferrer" class="social-link" title="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://vestige.fi/asset/1285492943" target="_blank" rel="noopener noreferrer" class="social-link" title="Vestige">
+                    <i class="fas fa-chart-line"></i>
+                </a>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <h1>Welcome to My Site</h1>
-            <p>A modern website hosted on GitHub Pages</p>
+            <h1>Arbitraz</h1>
+            <p>A community directed arbitrage experiment born on Algorand</p>
         </section>
 
-        <section id="about" class="about">
-            <h2>About</h2>
-            <p>This is a sample website created to demonstrate GitHub Pages hosting capabilities.</p>
+        <section id="metrics" class="metrics">
+            <h2>Token Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>Price</h3>
+                    <p id="price" class="metric-value"><span class="dollar-sign">$</span><span id="priceValue">Loading...</span></p>
+                    <p id="priceChange" class="metric-change">Loading...</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Market Cap ($)</h3>
+                    <p id="marketCap" class="metric-value"><span class="dollar-sign">$</span><span id="marketCapValue">Loading...</span></p>
+                </div>
+                <div class="metric-card">
+                    <h3>24h Volume ($)</h3>
+                    <p id="volume24h" class="metric-value"><span class="dollar-sign">$</span><span id="volume24hValue">Loading...</span></p>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out!</p>
-        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 My GitHub Pages Site. All rights reserved.</p>
+        <p>&copy; 2024 Arbitraz. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
