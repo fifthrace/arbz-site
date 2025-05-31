@@ -76,19 +76,23 @@ nav {
 }
 
 main {
-    margin-top: 4rem;
+    margin-top: 4.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 section {
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .hero {
     text-align: center;
     padding: 3rem 1rem;
     background-color: var(--secondary-background);
+    position: relative;
 }
 
 .hero h1 {
