@@ -50,6 +50,8 @@ nav {
 .logo-img {
     height: 40px;
     width: auto;
+    max-width: 40px;
+    max-height: 40px;
 }
 
 .social-links {
