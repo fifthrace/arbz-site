@@ -78,6 +78,5 @@ async function fetchTokenData() {
     }
 }
 
-// Fetch data immediately and then every 30 seconds
+// Fetch data immediately
 fetchTokenData();
-setInterval(fetchTokenData, 30000);
