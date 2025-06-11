@@ -42,7 +42,14 @@ function updateMetric(id, value, formatter = formatNumber) {
 async function fetchTokenData() {
     try {
         // Fetch market data
-        const marketResponse = await fetch('https://free-api.vestige.fi/asset/1285492943/list?provider=T3&currency=USD');
+        const marketResponse = await fetch('https://free-api.vestige.fi/asset/1285492943/list?provider=T3&currency=USD', {
+            mode: 'cors',
+            credentials: 'omit',
+            headers: {
+                'Accept': 'application/json',
+                'Origin': window.location.origin
+            }
+        });
         if (!marketResponse.ok) {
             throw new Error(`HTTP error! status: ${marketResponse.status}`);
         }

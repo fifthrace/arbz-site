@@ -263,3 +263,80 @@ footer {
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.7);
 }
+
+.farm {
+    background-color: var(--background-color);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.farm-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem auto;
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--secondary-background);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+.farm-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.farm-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--background-color);
+    min-width: 200px;
+}
+
+.farm-link:hover {
+    transform: translateY(-5px);
+}
+
+.farm-logo {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.farm-link:nth-child(2) .farm-logo {
+    border-radius: 0;  /* Remove border radius for ARBZ/ALGO logo */
+}
+
+.farm-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#tinyman-farm-widget {
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: var(--secondary-background);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+@media (max-width: 768px) {
+    .farm-options {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
